@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Suporte do Jogo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Envie uma mensagem de suporte</h1>
+    <form id="suporte-form">
+      <input type="text" id="nome" placeholder="Seu nome" required />
+      <input type="email" id="email" placeholder="Seu email" required />
+      <select id="tipo" required>
+        <option value="">Selecione o tipo</option>
+        <option value="Sugestão">Sugestão</option>
+        <option value="Ajuda">Ajuda</option>
+        <option value="Bug">Bug</option>
+      </select>
+      <textarea id="mensagem" placeholder="Digite sua mensagem" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+    <p id="status"></p>
+  </div>
+
+  <!-- Firebase SDK -->
+  <script type="module" src="script.js"></script>
+</body>
+</html>
